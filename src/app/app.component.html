@@ -1,5 +1,11 @@
 <h1>
   {{title}}
-  
-  <input class="AppComponent" placeholder="What needs to be done?" autofocus="" [(ngModel)]="title"  >
+
+  <input class="AppComponent" placeholder="What needs to be done?" autofocus="" [(ngModel)]="title" (keyup.enter)="enter(1)">
+
+  <br/>
+
+  {{title2}}
+  <input class="AppComponent" placeholder="What needs to be done?" autofocus="" [(ngModel)]="title2" (keyup.enter)="enter(2)">
+
 </h1>
