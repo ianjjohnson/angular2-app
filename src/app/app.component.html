@@ -12,5 +12,5 @@
 
 <div class="tile">
   <app-game class="app-game" *ngIf="loadScreen == false"></app-game>
-  <button class="enter-site" (click)="enterSite()" *ngIf="loadScreen == true">Play Assassins</button>
+  <button (click)="enterSite()" *ngIf="loadScreen == true">Play Assassins</button>
 </div>
