@@ -6,14 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
-  title2= 'second title!';
 
-  enter(num){
-    if(num == 1){
-      this.title = "You hit Enter!";
-    } else {
-      this.title2= "You hit Enter2!";
-    }
+  loadScreen: boolean = true;
+
+  enterSite() {
+    this.loadScreen = false;
   }
+
 }
