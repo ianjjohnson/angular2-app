@@ -1,0 +1,14 @@
+<section class="game-app">
+  <header class="header">
+    <h1>Teams</h1>
+    <button class="newTeam" (click)="addTeam()"></button>
+  </header>
+  <section class="main" *ngIf="teams.length > 0">
+    <div class="view" *ngFor="let t of teams">
+      <app-team [team]=t></app-team>
+    </div>
+  </section>
+  <footer class="footer" *ngIf="teams.length > 0">
+    <span class="box-count"><strong>{{teams.length}}</strong> {{teams.length == 1 ? 'team' : 'teams'}}</span>
+  </footer>
+</section>
