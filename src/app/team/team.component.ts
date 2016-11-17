@@ -22,4 +22,8 @@ export class TeamComponent {
     return this.team.getPlayers();
   }
 
+  addPlayer() {
+    this.team.addPlayer(new Player());
+  }
+
 }

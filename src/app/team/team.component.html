@@ -1,1 +1,5 @@
 <h1> {{team.name}} </h1>
+<section class="player" *ngFor="let p of players">
+  <app-player [player]=p></app-player>
+</section>
+<button class="newTeam" (click)="addPlayer()">Add Player</button>

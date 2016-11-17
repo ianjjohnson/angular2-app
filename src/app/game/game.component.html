@@ -1,7 +1,7 @@
 <section class="game-app">
   <header class="header">
     <h1>Teams</h1>
-    <button class="newTeam" (click)="addTeam()"></button>
+    <button class="newTeam" (click)="addTeam()">Add Team</button>
   </header>
   <section class="main" *ngIf="teams.length > 0">
     <div class="view" *ngFor="let t of teams">

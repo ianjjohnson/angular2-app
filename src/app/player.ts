@@ -1,6 +1,6 @@
 export class Player {
 
-  name: string = "";
+  name: string = "Player Name";
   alive: boolean = false;
 
   constructor(values: Object = {}) {
